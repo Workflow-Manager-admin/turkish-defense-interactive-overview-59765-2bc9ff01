@@ -1,0 +1,44 @@
+:root {
+  --slidev-theme-primary: #0057b8;
+  --slidev-theme-secondary: #e30a17;
+  --slidev-theme-accent: #f9cf02;
+}
+
+/* Modern, visually rich style for key elements */
+.slidev-layout .slidev-title,
+.slidev-layout h1,
+.slidev-layout h2 {
+  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(90deg, #0057b8 10%, #f9cf02 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.5em;
+}
+
+.slidev-sidebar {
+  background: #f4f8fb;
+  border-right: 4px solid #f9cf02;
+}
+
+/* Custom accent effect for buttons and highlights */
+button, .slidev-button, a.slidev-link, .accent {
+  background: #f9cf02 !important;
+  color: #0057b8 !important;
+  border-radius: 6px;
+  padding: 0.6em 1.4em;
+  font-weight: bold;
+  border: none;
+  transition: background 0.1s;
+}
+button:hover, .slidev-button:hover, a.slidev-link:hover {
+  background: #e30a17 !important;
+  color: #fff !important;
+}
+
+.slidev-layout .gallery img {
+  transition: transform 0.15s;
+  cursor: zoom-in;
+}
+.slidev-layout .gallery img:hover {
+  transform: scale(1.17);
+}
